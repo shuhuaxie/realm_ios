@@ -16,5 +16,6 @@
     
 }
 -(void) sayHello;
+-(void) getData;
 @end
 #endif /* obc_test_h */

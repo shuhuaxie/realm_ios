@@ -51,7 +51,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         var obj = obc_test();
         obj.sayHello();
-        
+        obj.getData();
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

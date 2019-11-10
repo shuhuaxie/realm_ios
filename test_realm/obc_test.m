@@ -18,4 +18,22 @@
     [s sayHello];
 }
 
+-(void)getData{
+    NSLog(@"getData");
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *urlStrig = @"https://gist.githubusercontent.com/shuhuaxie/6dc2acac00f4770a4093/raw/d5dbfe8f08ae24eceefad6ee0c53e8e2d9647b3b/gistfile1.txt";
+        urlStrig = [urlStrig stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+        NSURL *url = [NSURL URLWithString:urlStrig];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        NSString *str1 = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    
+        NSLog(@"getData resp: = %@",str1);
+        
+    });
+    NSLog(@"getData end");
+}
+
+
+
 @end
