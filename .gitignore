@@ -1,1 +1,52 @@
 test_realm.xcodeproj
+Podfile.lock
+Pods/Manifest.lock
+Pods/HandyJSON/LICENSE
+Pods/HandyJSON/README.md
+Pods/HandyJSON/Source/AnyExtensions.swift
+Pods/HandyJSON/Source/BuiltInBasicType.swift
+Pods/HandyJSON/Source/BuiltInBridgeType.swift
+Pods/HandyJSON/Source/CBridge.swift
+Pods/HandyJSON/Source/Configuration.swift
+Pods/HandyJSON/Source/ContextDescriptorType.swift
+Pods/HandyJSON/Source/CustomDateFormatTransform.swift
+Pods/HandyJSON/Source/DataTransform.swift
+Pods/HandyJSON/Source/DateFormatterTransform.swift
+Pods/HandyJSON/Source/DateTransform.swift
+Pods/HandyJSON/Source/Deserializer.swift
+Pods/HandyJSON/Source/EnumTransform.swift
+Pods/HandyJSON/Source/EnumType.swift
+Pods/HandyJSON/Source/Export.swift
+Pods/HandyJSON/Source/ExtendCustomBasicType.swift
+Pods/HandyJSON/Source/ExtendCustomModelType.swift
+Pods/HandyJSON/Source/FieldDescriptor.swift
+Pods/HandyJSON/Source/HandyJSON.h
+Pods/HandyJSON/Source/HelpingMapper.swift
+Pods/HandyJSON/Source/HexColorTransform.swift
+Pods/HandyJSON/Source/ISO8601DateTransform.swift
+Pods/HandyJSON/Source/Logger.swift
+Pods/HandyJSON/Source/MangledName.swift
+Pods/HandyJSON/Source/Measuable.swift
+Pods/HandyJSON/Source/Metadata.swift
+Pods/HandyJSON/Source/NSDecimalNumberTransform.swift
+Pods/HandyJSON/Source/OtherExtension.swift
+Pods/HandyJSON/Source/PointerType.swift
+Pods/HandyJSON/Source/Properties.swift
+Pods/HandyJSON/Source/PropertyInfo.swift
+Pods/HandyJSON/Source/ReflectionHelper.swift
+Pods/HandyJSON/Source/Serializer.swift
+Pods/HandyJSON/Source/Transformable.swift
+Pods/HandyJSON/Source/TransformOf.swift
+Pods/HandyJSON/Source/TransformType.swift
+Pods/HandyJSON/Source/URLTransform.swift
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-dummy.m
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON.modulemap
+Pods/Target Support Files/SwiftyJSON/SwiftyJSON.xcconfig
+Pods/Pods.xcodeproj/project.xcworkspace
+Pods/Pods.xcodeproj/xcuserdata/xie.xcuserdatad/xcschemes
+Pods
+test_realm.xcworkspace
