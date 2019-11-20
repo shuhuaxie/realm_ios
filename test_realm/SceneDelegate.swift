@@ -9,6 +9,8 @@
 import UIKit
 import SwiftUI
 import SwiftyJSON
+import Realm
+import RealmSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -52,6 +54,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         var obj = obc_test();
         obj.sayHello();
         obj.getData();
+        
+       
+        
+        DispatchQueue(label: "background").async {
+            autoreleasepool {
+                let realm = try! Realm()
+                
+                       
+                       // Query Realm for all dogs less than 2 years old
+                       let puppies = realm.objects(Dog.self).filter("age < 2")
+                        // => 0 because no dogs have been added to the Realm yet
+                       
+                       print("count: \(puppies.count)");
+                       let myDog = Dog()
+                       myDog.name = "Rex"
+                       myDog.age = 1
+                       print("name of dog: \(myDog.name)")
+                       try! realm.write {
+                           realm.add(myDog)
+                       }
+                
+                let theDog :Dog? = realm.objects(Dog.self).filter("age == 1").first
+                print("name 2 of dog: \(theDog?.name ?? "")")
+                try! realm.write {
+                    theDog!.age = 3
+                }
+            }
+        }
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -83,5 +113,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     
+}
+
+class Dog: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var age = 0
 }
 

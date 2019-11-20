@@ -7,7 +7,8 @@ target 'test_realm' do
     pod 'SwiftyJSON'
     pod 'HandyJSON', '~> 5.0.0-beta'
   # Pods for test_realm
-    
+    pod 'MJExtension'
+    pod 'RealmSwift'
   target 'test_realmTests' do
     inherit! :search_paths
     # Pods for testing

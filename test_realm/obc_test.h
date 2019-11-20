@@ -10,7 +10,7 @@
 #define obc_test_h
 
 #include <UIKit/UIKit.h>
-
+#include "Person.h"
 
 @interface obc_test : NSObject {
     
